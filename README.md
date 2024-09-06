@@ -1,2 +1,3 @@
-# fp_emu
-Final Project Emulator
+# Projects - Evangelos Barberis
+
+A collection of projects from my educational journey!
