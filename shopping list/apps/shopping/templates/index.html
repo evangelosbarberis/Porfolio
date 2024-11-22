@@ -1,0 +1,42 @@
+[[extend 'layout.html']]
+
+<style>
+[v-cloak] {
+     display: none;
+}
+</style>
+
+<div class="section" id="app" v-cloak>
+  <h1 class="title">Shopping List</h1>
+
+  <div class="container">
+    <table class="table is-fullwidth is-striped">
+      <tr class="add-row">
+        <td class="is-narrow"><i class="is-size-2 fa fa-plus-square has-text-success add-item" @click="add_item"></i></td>
+        <td><input class="input add-item" type="text" v-model="new_item" @keyup.enter="add_item"></td>
+        <td class="is-narrow"></td>
+      </tr>
+      <tr v-for="item in sorted_items" :key="item.id" class="item-row">
+        <td class="check is-narrow">
+          <input type="checkbox" v-model="item.is_purchased" @change="update_item(item)">
+        </td>
+        <td class="item">{{item.item_name}}</td>
+        <td class="trash is-narrow">
+          <i class="trash has-text-danger fa fa-trash" @click="delete_item(item)"></i>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- kept the sma,e added information in regards to my js file -->
+[[block page_scripts]]
+<script>
+  let load_data_url = "[[=XML(load_data_url)]]";
+  let add_item_url = "[[=XML(add_item_url)]]";
+  let update_item_url = "[[=XML(update_item_url)]]";
+  let delete_item_url = "[[=XML(delete_item_url)]]";
+</script>
+<script src="js/index.js"></script>
+[[end]]
