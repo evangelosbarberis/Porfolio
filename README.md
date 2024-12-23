@@ -7,6 +7,9 @@ My experience ranges from creating intuitive UI/UX designs to developing complex
 
 ## Project Overview
 
+### MutiThreaded Httpserver
+I implemented a multithreaded HTTP server featuring a worker thread pool and signal handling to ensure smooth and efficient operation. The server includes a robust file lock management system using read-write locks to synchronize access and safely handle deleted files. Additionally, I enhanced request handling for GET and PUT operations with detailed error logging, efficient response generation, and timed lock acquisition to improve reliability.
+
 ### Data Structures
 Contains various projects demonstrating my proficiency in data structure implementations and foundational programming concepts. These projects vary in scope and complexity, showcasing my understanding of core computer science principles.
 
