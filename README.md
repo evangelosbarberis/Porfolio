@@ -10,7 +10,11 @@ My experience ranges from creating intuitive UI/UX designs to developing complex
 ### Data Structures
 Contains various projects demonstrating my proficiency in data structure implementations and foundational programming concepts. These projects vary in scope and complexity, showcasing my understanding of core computer science principles.
 
-### Web Applications
+### Web Applications / AvianView
+You can access the completed repository for AvianView, a bird-watching web application that allows users to log their own sightings and view sightings reported by others. The project specifications are also available in the repository. 
+
+https://github.com/evangelosbarberis/AvianView 
+
 Houses my current and completed web development projects. This directory includes both small-scale applications and larger, more complex projects that demonstrate my full-stack development capabilities.
 
 ### C++ Game Emulator
